@@ -1,12 +1,18 @@
-{
-    "Johnny Appleseed": {
-        "password": "password",
-        "balance": 1000,
-        "homeroom": 119
-    },
-    "Mario Mario": {
-        "password": "mushroom",
-        "balance": 50000000000,
-        "homeroom": 222
+[
+  {
+    "username": "Johnny Appleseed",
+    "password": "password",
+    "userdata": {
+      "balance": 1000,
+      "homeroom": 119
     }
-}
+  },
+  {
+    "username": "Mario Mario",
+    "password": "mushroom",
+    "userdata": {
+      "balance": 50000000000,
+      "homeroom": 222
+    }
+  }
+]
