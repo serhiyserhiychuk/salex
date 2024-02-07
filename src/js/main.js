@@ -10,31 +10,39 @@
 //     console.log(data);
 //   });
 
+const form = document.querySelector('.login-form');
+
 function getInformation(name, password) {
-    fetch('./js/balance.json')
-        .then(response => response.json())
-        .then(data => {
-            // console.log(data);
-            const d = data[name];
-            // console.log(d);
-            if (d) {
-                if (d.password === password) {
-                    console.log('Login success');
-                    // window.location.href = 'balance.html';
-                    const balanceDiv = document.getElementById('balance');
-                    balanceDiv.innerHTML = "Balance: " + d.balance;
-                } else {
-                    alert('Password is incorrect');
-                }
-            } else {
-                alert('User not found');
-            }
-        });
+  try {
+    fetch('/src/js/balance.json')
+      .then(response => response.json())
+      .then(data => {
+        // console.log(data);
+        const d = data[name];
+        // console.log(d);
+        if (d) {
+          if (d.password === password) {
+            console.log('Login success');
+            // window.location.href = 'balance.html';
+            const balanceDiv = document.getElementById('balance');
+            balanceDiv.innerHTML = 'Balance: ' + d.balance;
+          } else {
+            alert('Password is incorrect');
+          }
+        } else {
+          alert('User not found');
+        }
+      });
+  } catch (error) {
+    console.error(error);
+  }
 }
 
-document.getElementById('login-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    const name = document.getElementById('name').value;
-    const password = document.getElementById('password').value;
-    getInformation(name, password);
-});
+form.addEventListener('submit', loginHandler);
+
+function loginHandler(event) {
+  event.preventDefault();
+  const name = document.getElementById('name').value;
+  const password = document.getElementById('password').value;
+  getInformation(name, password);
+}
