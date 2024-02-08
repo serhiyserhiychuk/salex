@@ -1,7 +1,7 @@
-// import iziToast from 'izitoast';
-// import 'izitoast/dist/css/iziToast.min.css';
-// import simpleLightbox from 'simplelightbox';
-// import 'simplelightbox/dist/simple-lightbox.min.css';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+import simpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
 // get balance.json
 // fetch('./js/balance.json')
@@ -12,20 +12,22 @@
 
 import balance from './balance.json';
 
-console.log(balance);
-
 const form = document.querySelector('.login-form');
 
 function getInformation(name, password) {
   try {
+    const balanceDiv = document.getElementById('balance');
+    balanceDiv.innerHTML = '';
     for (const user of balance) {
       if (user.username === name && user.password === password) {
-        console.log('Login success');
-        const balanceDiv = document.getElementById('balance');
         balanceDiv.innerHTML = 'Balance: ' + user.userdata.balance;
-      } else {
-        alert('User not found');
       }
+    }
+    if (balanceDiv.innerHTML === '') {
+      iziToast.warning({
+        message: `Incorrect name or password`,
+        position: 'topRight',
+      });
     }
   } catch (error) {
     console.error(error);
