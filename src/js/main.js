@@ -34,15 +34,30 @@ function getInformation(name, password) {
   }
 }
 
-form.addEventListener('submit', loginHandler);
+// form.addEventListener('submit', loginHandler);
 
-function loginHandler(event) {
-  event.preventDefault();
-  const name = document.getElementById('name').value;
-  const password = document.getElementById('password').value;
-  getInformation(name, password);
+// function loginHandler(event) {
+//   event.preventDefault();
+//   const name = document.getElementById('name').value;
+//   const password = document.getElementById('password').value;
+//   getInformation(name, password);
+// }
+
+const mobileBtn = document.querySelector('.header-icon');
+const mobileMenu = document.querySelector('.mobile-menu');
+const closeBtn = document.querySelector('.mobile-close-button');
+
+mobileBtn.addEventListener('click', mobileHandler);
+
+function mobileHandler(e) {
+  mobileMenu.classList.remove('visually-hidden');
 }
 
+closeBtn.addEventListener('click', closeHandler);
+
+function closeHandler(e) {
+  mobileMenu.classList.add('visually-hidden');
+}
 // try {
 //     fetch('./js/balance.json')
 //       .then(response => response.json())
