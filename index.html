@@ -14,7 +14,7 @@
     <script type="module" crossorigin src="/salex/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/salex/assets/vendor-491d46cf.js">
     <link rel="stylesheet" href="/salex/assets/vendor-eb6030bc.css">
-    <link rel="stylesheet" href="/salex/assets/index-9c4e0849.css">
+    <link rel="stylesheet" href="/salex/assets/index-3faa6814.css">
   </head>
   <body>
     <!-- <h1>Welcome to SaleX!</h1>
@@ -73,7 +73,9 @@
       <section class="hero section">
         <div class="container">
           <h1 class="main-title">The fastest delivery for IMHS</h1>
-          <button type="button" class="order-button">Order Service</button>
+          <button type="button" class="order-button">
+            <a class="order-link" href="#products">Order Service</a>
+          </button>
         </div>
       </section>
       <!-- Section "About" -->
@@ -87,10 +89,9 @@
                   <use href="/salex/assets/icons-e665d22c.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="other-title">Strategy</h3>
+              <h3 class="other-title">Connection</h3>
               <p class="paragraph">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
+                We are always ready for you orders, questions or feedback.
               </p>
             </li>
             <li class="about-item">
@@ -101,8 +102,7 @@
               </div>
               <h3 class="other-title">Punctuality</h3>
               <p class="paragraph">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
+                All your orders will be delivered on time and in safe.
               </p>
             </li>
             <li class="about-item">
@@ -111,10 +111,10 @@
                   <use href="/salex/assets/icons-e665d22c.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="other-title">Diligence</h3>
+              <h3 class="other-title">Quality</h3>
               <p class="paragraph">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
+                Our drinks and muffins are made with Sarah`s hands with love
+                just for you!
               </p>
             </li>
             <li class="about-item">
@@ -125,8 +125,8 @@
               </div>
               <h3 class="other-title">Technologies</h3>
               <p class="paragraph">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
+                We are using the best technologies for making and sharing our
+                products.
               </p>
             </li>
           </ul>
@@ -153,7 +153,7 @@
             <li class="list-item">
               <img
                 class="team-photo"
-                src=""
+                src="/salex/assets/WINPro-c929d7f4.jpg"
                 alt="Team Member"
                 width="264"
                 height="260"
@@ -166,7 +166,7 @@
             <li class="list-item">
               <img
                 class="team-photo"
-                src=""
+                src="/salex/assets/Sarah-bf055d36.jpg"
                 alt="Team Member"
                 width="264"
                 height="260"
@@ -192,7 +192,7 @@
         </div>
       </section>
       <!-- Section "Portfolio" -->
-      <section class="section">
+      <section class="section" id="products">
         <div class="container">
           <h2 class="team-title">Our Products</h2>
           <ul class="portfolio-list">
@@ -200,15 +200,6 @@
               <div class="portfolio-image-container">
                 <img
                   class="portfolio-photo"
-                  srcset="
-                    ./images/mobile-img-one.jpg    288w,
-                    ./images/mobile-img-one@2x.jpg 576w,
-                    ./images/tablet-img-one.jpg    356w,
-                    ./images/tablet-img-one@2x.jpg 712w,
-                    ./images/img-one.jpg           360w,
-                    ./images/img-one@2x.jpg        720w
-                  "
-                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/img-one.jpg"
                   alt="App Pages"
                   width="360"
@@ -221,52 +212,36 @@
                 </p>
               </div>
               <div class="portfolio-container">
-                <h3 class="app-title">Banking App</h3>
-                <p class="paragraph">App</p>
+                <h3 class="app-title">Coffee</h3>
+                <p class="paragraph">Energize</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-image-container">
                 <img
-                  srcset="
-                    ./images/mobile-img-two.jpg    288w,
-                    ./images/mobile-img-two@2x.jpg 576w,
-                    ./images/tablet-img-two.jpg    356w,
-                    ./images/tablet-img-two@2x.jpg 712w,
-                    ./images/img-two.jpg           360w,
-                    ./images/img-two@2x.jpg        720w
-                  "
-                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   class="portfolio-photo"
-                  src="./images/img-two.jpg"
+                  src="/salex/assets/muffins-28257682.jpg"
                   alt="QR code scanning"
                   width="360"
                   height="300"
                 />
                 <p class="portfolio-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App
+                  <span class="item-span">
+                    Homemade and very delicious muffins
+                  </span>
+                  <span class="item-span"> Blueberry/Chocolate taste </span>
+                  <span class="item-span"> $1 per unit </span>
                 </p>
               </div>
               <div class="portfolio-container">
-                <h3 class="app-title">Cashless Payment</h3>
-                <p class="paragraph">Marketing</p>
+                <h3 class="app-title">Muffins</h3>
+                <p class="paragraph">Homemade</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-image-container">
                 <img
                   class="portfolio-photo"
-                  srcset="
-                    ./images/mobile-img-three.jpg    288w,
-                    ./images/mobile-img-three@2x.jpg 576w,
-                    ./images/tablet-img-three.jpg    356w,
-                    ./images/tablet-img-three@2x.jpg 712w,
-                    ./images/img-three.jpg           360w,
-                    ./images/img-three@2x.jpg        720w
-                  "
-                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/img-three.jpg"
                   alt="CrossPlatform App"
                   width="360"
@@ -279,95 +254,77 @@
                 </p>
               </div>
               <div class="portfolio-container">
-                <h3 class="app-title">Meditation App</h3>
-                <p class="paragraph">App</p>
+                <h3 class="app-title">Tea</h3>
+                <p class="paragraph">Warming</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-image-container">
                 <img
-                  srcset="
-                    ./images/mobile-img-four.jpg    288w,
-                    ./images/mobile-img-four@2x.jpg 576w,
-                    ./images/tablet-img-four.jpg    356w,
-                    ./images/tablet-img-four@2x.jpg 712w,
-                    ./images/img-four.jpg           360w,
-                    ./images/img-four@2x.jpg        720w
-                  "
-                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   class="portfolio-photo"
-                  src="./images/img-four.jpg"
+                  src="/salex/assets/family-dollar-e8dc1b71.jpg"
                   alt="Service in Taxi"
                   width="360"
                   height="300"
                 />
                 <p class="portfolio-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App
+                  <span class="item-span"
+                    >Email our team members to make an order</span
+                  >
+                  <span class="item-span"
+                    >Cost of delivery: 10% of the cost of the item</span
+                  >
                 </p>
               </div>
               <div class="portfolio-container">
-                <h3 class="app-title">Taxi Service</h3>
-                <p class="paragraph">Marketing</p>
+                <h3 class="app-title">Family Dollar</h3>
+                <p class="paragraph">Delivery</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-image-container">
                 <img
-                  srcset="
-                    ./images/mobile-img-five.jpg    288w,
-                    ./images/mobile-img-five@2x.jpg 576w,
-                    ./images/tablet-img-five.jpg    356w,
-                    ./images/tablet-img-five@2x.jpg 712w,
-                    ./images/img-five.jpg           360w,
-                    ./images/img-five@2x.jpg        720w
-                  "
-                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   class="portfolio-photo"
-                  src="./images/img-five.jpg"
+                  src="/salex/assets/subway-9670b51d.jpg"
                   alt="Wallpapers"
                   width="360"
                   height="300"
                 />
                 <p class="portfolio-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App
+                  <span class="item-span"
+                    >Email our team members to make an order</span
+                  >
+                  <span class="item-span"
+                    >Cost of delivery: 10% of the cost of the item</span
+                  >
                 </p>
               </div>
               <div class="portfolio-container">
-                <h3 class="app-title">Screen Illustrations</h3>
-                <p class="paragraph">Design</p>
+                <h3 class="app-title">Subway</h3>
+                <p class="paragraph">Delivery</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-image-container">
                 <img
-                  srcset="
-                    ./images/mobile-img-six.jpg    288w,
-                    ./images/mobile-img-six@2x.jpg 576w,
-                    ./images/tablet-img-six.jpg    356w,
-                    ./images/tablet-img-six@2x.jpg 712w,
-                    ./images/img-six.jpg           360w,
-                    ./images/img-six@2x.jpg        720w
-                  "
-                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   class="portfolio-photo"
-                  src="./images/img-six.jpg"
+                  src="data:image/png;base64,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"
                   alt="Phone Searching"
                   width="360"
                   height="300"
                 />
                 <p class="portfolio-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App
+                  <span class="item-span"
+                    >Email our team members to make an order</span
+                  >
+                  <span class="item-span"
+                    >Cost of delivery: 25% of the cost of the item</span
+                  >
                 </p>
               </div>
               <div class="portfolio-container">
-                <h3 class="app-title">Online Courses</h3>
-                <p class="paragraph">Marketing</p>
+                <h3 class="app-title">Dollar Tree</h3>
+                <p class="paragraph">Delivery</p>
               </div>
             </li>
           </ul>
