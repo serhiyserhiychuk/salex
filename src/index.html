@@ -69,7 +69,9 @@
       <section class="hero section">
         <div class="container">
           <h1 class="main-title">The fastest delivery for IMHS</h1>
-          <button type="button" class="order-button">Order Service</button>
+          <button type="button" class="order-button">
+            <a class="order-link" href="#products">Order Service</a>
+          </button>
         </div>
       </section>
       <!-- Section "About" -->
@@ -83,10 +85,9 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="other-title">Strategy</h3>
+              <h3 class="other-title">Connection</h3>
               <p class="paragraph">
-                Our goal is to identify the business problem to walk away with
-                the perfect and creative solution.
+                We are always ready for you orders, questions or feedback.
               </p>
             </li>
             <li class="about-item">
@@ -97,8 +98,7 @@
               </div>
               <h3 class="other-title">Punctuality</h3>
               <p class="paragraph">
-                Bring the key message to the brand's audience for the best price
-                within the shortest possible time.
+                All your orders will be delivered on time and in safe.
               </p>
             </li>
             <li class="about-item">
@@ -107,10 +107,10 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="other-title">Diligence</h3>
+              <h3 class="other-title">Quality</h3>
               <p class="paragraph">
-                Research and confirm brands that present the strongest digital
-                growth opportunities and minimize risk.
+                Our drinks and muffins are made with Sarah`s hands with love
+                just for you!
               </p>
             </li>
             <li class="about-item">
@@ -121,8 +121,8 @@
               </div>
               <h3 class="other-title">Technologies</h3>
               <p class="paragraph">
-                Design practice focused on digital experiences. We bring forth a
-                deep passion for problem-solving.
+                We are using the best technologies for making and sharing our
+                products.
               </p>
             </li>
           </ul>
@@ -149,7 +149,7 @@
             <li class="list-item">
               <img
                 class="team-photo"
-                src=""
+                src="./images/WINPro.jpg"
                 alt="Team Member"
                 width="264"
                 height="260"
@@ -162,7 +162,7 @@
             <li class="list-item">
               <img
                 class="team-photo"
-                src=""
+                src="./images/Sarah.jpg"
                 alt="Team Member"
                 width="264"
                 height="260"
@@ -188,7 +188,7 @@
         </div>
       </section>
       <!-- Section "Portfolio" -->
-      <section class="section">
+      <section class="section" id="products">
         <div class="container">
           <h2 class="team-title">Our Products</h2>
           <ul class="portfolio-list">
@@ -196,15 +196,6 @@
               <div class="portfolio-image-container">
                 <img
                   class="portfolio-photo"
-                  srcset="
-                    ./images/mobile-img-one.jpg    288w,
-                    ./images/mobile-img-one@2x.jpg 576w,
-                    ./images/tablet-img-one.jpg    356w,
-                    ./images/tablet-img-one@2x.jpg 712w,
-                    ./images/img-one.jpg           360w,
-                    ./images/img-one@2x.jpg        720w
-                  "
-                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/img-one.jpg"
                   alt="App Pages"
                   width="360"
@@ -217,52 +208,36 @@
                 </p>
               </div>
               <div class="portfolio-container">
-                <h3 class="app-title">Banking App</h3>
-                <p class="paragraph">App</p>
+                <h3 class="app-title">Coffee</h3>
+                <p class="paragraph">Energize</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-image-container">
                 <img
-                  srcset="
-                    ./images/mobile-img-two.jpg    288w,
-                    ./images/mobile-img-two@2x.jpg 576w,
-                    ./images/tablet-img-two.jpg    356w,
-                    ./images/tablet-img-two@2x.jpg 712w,
-                    ./images/img-two.jpg           360w,
-                    ./images/img-two@2x.jpg        720w
-                  "
-                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   class="portfolio-photo"
-                  src="./images/img-two.jpg"
+                  src="./images/muffins.jpg"
                   alt="QR code scanning"
                   width="360"
                   height="300"
                 />
                 <p class="portfolio-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App
+                  <span class="item-span">
+                    Homemade and very delicious muffins
+                  </span>
+                  <span class="item-span"> Blueberry/Chocolate taste </span>
+                  <span class="item-span"> $1 per unit </span>
                 </p>
               </div>
               <div class="portfolio-container">
-                <h3 class="app-title">Cashless Payment</h3>
-                <p class="paragraph">Marketing</p>
+                <h3 class="app-title">Muffins</h3>
+                <p class="paragraph">Homemade</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-image-container">
                 <img
                   class="portfolio-photo"
-                  srcset="
-                    ./images/mobile-img-three.jpg    288w,
-                    ./images/mobile-img-three@2x.jpg 576w,
-                    ./images/tablet-img-three.jpg    356w,
-                    ./images/tablet-img-three@2x.jpg 712w,
-                    ./images/img-three.jpg           360w,
-                    ./images/img-three@2x.jpg        720w
-                  "
-                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   src="./images/img-three.jpg"
                   alt="CrossPlatform App"
                   width="360"
@@ -275,95 +250,77 @@
                 </p>
               </div>
               <div class="portfolio-container">
-                <h3 class="app-title">Meditation App</h3>
-                <p class="paragraph">App</p>
+                <h3 class="app-title">Tea</h3>
+                <p class="paragraph">Warming</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-image-container">
                 <img
-                  srcset="
-                    ./images/mobile-img-four.jpg    288w,
-                    ./images/mobile-img-four@2x.jpg 576w,
-                    ./images/tablet-img-four.jpg    356w,
-                    ./images/tablet-img-four@2x.jpg 712w,
-                    ./images/img-four.jpg           360w,
-                    ./images/img-four@2x.jpg        720w
-                  "
-                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   class="portfolio-photo"
-                  src="./images/img-four.jpg"
+                  src="./images/family-dollar.jpg"
                   alt="Service in Taxi"
                   width="360"
                   height="300"
                 />
                 <p class="portfolio-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App
+                  <span class="item-span"
+                    >Email our team members to make an order</span
+                  >
+                  <span class="item-span"
+                    >Cost of delivery: 10% of the cost of the item</span
+                  >
                 </p>
               </div>
               <div class="portfolio-container">
-                <h3 class="app-title">Taxi Service</h3>
-                <p class="paragraph">Marketing</p>
+                <h3 class="app-title">Family Dollar</h3>
+                <p class="paragraph">Delivery</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-image-container">
                 <img
-                  srcset="
-                    ./images/mobile-img-five.jpg    288w,
-                    ./images/mobile-img-five@2x.jpg 576w,
-                    ./images/tablet-img-five.jpg    356w,
-                    ./images/tablet-img-five@2x.jpg 712w,
-                    ./images/img-five.jpg           360w,
-                    ./images/img-five@2x.jpg        720w
-                  "
-                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   class="portfolio-photo"
-                  src="./images/img-five.jpg"
+                  src="./images/subway.jpg"
                   alt="Wallpapers"
                   width="360"
                   height="300"
                 />
                 <p class="portfolio-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App
+                  <span class="item-span"
+                    >Email our team members to make an order</span
+                  >
+                  <span class="item-span"
+                    >Cost of delivery: 10% of the cost of the item</span
+                  >
                 </p>
               </div>
               <div class="portfolio-container">
-                <h3 class="app-title">Screen Illustrations</h3>
-                <p class="paragraph">Design</p>
+                <h3 class="app-title">Subway</h3>
+                <p class="paragraph">Delivery</p>
               </div>
             </li>
             <li class="portfolio-item">
               <div class="portfolio-image-container">
                 <img
-                  srcset="
-                    ./images/mobile-img-six.jpg    288w,
-                    ./images/mobile-img-six@2x.jpg 576w,
-                    ./images/tablet-img-six.jpg    356w,
-                    ./images/tablet-img-six@2x.jpg 712w,
-                    ./images/img-six.jpg           360w,
-                    ./images/img-six@2x.jpg        720w
-                  "
-                  sizes="(min-width: 1158px) 360px, (min-width: 768px) 356px, (max-width: 767px) 288px"
                   class="portfolio-photo"
-                  src="./images/img-six.jpg"
+                  src="./images/Dollar_tree.png"
                   alt="Phone Searching"
                   width="360"
                   height="300"
                 />
                 <p class="portfolio-text">
-                  14 Stylish and User-Friendly App Design Concepts · Task
-                  Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
-                  · Cloud Storage App
+                  <span class="item-span"
+                    >Email our team members to make an order</span
+                  >
+                  <span class="item-span"
+                    >Cost of delivery: 25% of the cost of the item</span
+                  >
                 </p>
               </div>
               <div class="portfolio-container">
-                <h3 class="app-title">Online Courses</h3>
-                <p class="paragraph">Marketing</p>
+                <h3 class="app-title">Dollar Tree</h3>
+                <p class="paragraph">Delivery</p>
               </div>
             </li>
           </ul>
